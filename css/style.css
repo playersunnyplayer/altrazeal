@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;800&display=swap');
+@import url(variable.css);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  overflow-x: hidden;
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+figure img {
+  max-height: 100%;
+}
+
+.strong {
+  font-weight: 800;
+}
+
+small {
+  font-size: 12px;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(19 35 57 / 10%);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(19 35 57);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 45px;
+  color: var(--primaryColor);
+}
+
+h2 {
+  font-size: 40px;
+  margin: 0 0 10px;
+  line-height: 60px;
+}
+
+h3, .h3 {
+  font-size: 36px;
+  line-height: 35px;
+  position: relative;
+  margin: 0 0 100px;
+}
+
+h3:after, .h3:after {
+  content: "";
+  bottom: -20px;
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background: #03FF46;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 24px;
+  line-height: 39px;
+}
+
+h6 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.heading {
+  font-size: 30px;
+}
+
+.primaryColor {
+  color: var(--primaryColor);
+}
+
+.secondaryColor {
+  color: var(--secondaryColor);
+}
+
+header {
+  padding: 0 !important;
+  background: #132339;
+}
+
+.show_767 {
+  display: none;
+}
+
+.btn {
+  border-radius: 0;
+  line-height: 36px;
+  padding: 5px 20px;
+  border: 0;
+}
+
+.btn-primary {
+  background: var(--primaryColor);
+}
+
+.btn-secondary {
+  background: var(--secondaryColor);
+}
+
+.btn-outline {
+  border: solid 1px #fff;
+}
+
+.btn-outline:hover {
+  background: #fff;
+  color: #132339;
+}
+
+.logo img {
+  height: 90px;
+}
+
+.bgVideo {
+  position: fixed;
+  top: -2px;
+  left: 0;
+  min-width: 100%;
+  height: calc(100% + 4px);
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+}
+
+.bodywrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.animatedTextSec {
+  text-align: center;
+  padding: 40px 0 50px;
+}
+
+.bigText {
+  opacity: 0;
+  font-size: 80px;
+  margin: 0 0 50px;
+}
+
+.down-chevron img {
+  animation: MoveUpDown 0.8s linear infinite;
+}
+@keyframes MoveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.madecineSec {
+    display: flex;
+    justify-content: space-between;
+}
+.heroImg {
+    height: 500px;
+}
+.madecineSec .rightSec {display: flex;flex-direction: column;align-items: flex-end;justify-content: flex-end;}
+.madecineSec .rightSec .heading {
+    margin: 0 0 30px;
+    line-height: 40px;
+}
+.sleep {
+    height: 300px;
+}
+
+.learnSec {text-align: center;padding: 80px 0 100px;}
+.learnSec .heading {
+    margin: 0 0 40px;
+}
+.learnSec ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.learnSec li {}
+
+@media screen and (max-width: 1320px) {}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 30px 10px;
+  }
+
+  header .container {
+    padding: 0 10px !important;
+  }
+}
+
+@media only screen and (max-width: 980px) {}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {}
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 980px) {}
+
+@media only screen and (max-width: 767px) {
+  header {
+    padding: 0;
+  }
+
+  header .container {
+    padding: 10px 30px 20px;
+  }
+
+  h1 {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 20px 0 10px;
+  }
+
+  h2 {
+    font-size: 30px;
+    margin: 10px 0 30px;
+    line-height: 40px;
+  }
+
+  h3 {
+    font-size: 20px !important;
+  }
+
+  h4 {
+    line-height: 32px;
+  }
+
+  .hide_767 {
+    display: none;
+  }
+
+  .show_767 {
+    display: block;
+  }
+
+  .logo img {
+    height: auto;
+    max-width: 280px;
+  }
+}

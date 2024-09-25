@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="images/short_icon.png">
+	<title>Altrazeal</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+	<link rel="stylesheet" href="css/owl.theme.default.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<video class="bgVideo" autoplay muted loop>
+		<source src="images/bg.mp4" type="video/mp4">
+	</video>
+
+	<div class="bodywrapper">
+		<header class="navbar navbar-expand-lg">
+			<div class="container">
+				<a class="logo" href="index.html">
+					<img src="images/logo.png" alt="">
+				</a>
+			</div>
+		</header>
+
+		<div class="container">
+			<section class="animatedTextSec">
+				<div class="h3">
+					<div class="animate-typing" data-animate-loop="false" data-type-speed="200" data-type-delay="200"
+					data-remove-speed="50" data-remove-delay="500" data-cursor-speed="200">
+						Do you have a...
+					</div>
+				</div>
+
+				<h2 class="bigText animate1">Painful wound?</h2>
+				<h2 class="bigText animate2">Difficult to dress wound?</h2>
+				<h2 class="bigText animate3">Non-healing wound?</h2>
+				<h2 class="bigText animate4 down-chevron"><img src="images/down-chevron.svg" alt=""></h2>
+			</section>
+
+			<section class="madecineSec">
+				<img src="images/altrazeal-hero-image.png" class="heroImg" alt="">
+				<div class="rightSec">
+					<div class="heading">
+						Try Our Ultimate Wound Care Solution: <br>
+						<strong>Altrazeal® Transforming Powder Dressing</strong>
+					</div>
+
+					<img src="images/sleep.png" class="sleep" alt="">
+				</div>
+			</section>
+
+			<section class="learnSec">
+				<div class="heading">Learn More</div>
+				<ul>
+					<li><a href="#" class="btn btn-outline">About</a></li>
+					<li><a href="#" class="btn btn-outline">Evidence</a></li>
+					<li><a href="#" class="btn btn-outline">Testimonial</a></li>
+					<li><a href="#" class="btn btn-outline">Order</a></li>
+				</ul>
+			</section>
+		</div>
+	</div>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script src="js/jquery.animateTyping.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+	<script>
+		var tl = new TimelineMax({delay:4});
+		var property = { opacity: 1, duration:2 };
+		tl.to(".animate1", property)
+		.to(".animate2", property)
+		.to(".animate3", property)
+		.to(".animate4", { opacity: 1, duration:1 });
+	</script>
+</body>
+
+</html>
